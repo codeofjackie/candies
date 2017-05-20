@@ -1,5 +1,5 @@
 % Cripple Pachebel's Canon on Matlab
-% Have fun
+%用matlab演奏《卡农》
 fs = 44100; % sample rate
 dt = 1/fs;
 T16 = 0.125;
@@ -93,7 +93,7 @@ blkf blkf blkf blkf blkf blkf blkf blkf];
 % Base Melody
 cello = [do1f do1f so0f so0f la0f la0f mi0f mi0f...
 fa0f fa0f do0f do0f fa0f fa0f so0f so0f];
-% So-FUCKING-Long Melody
+% the following is melody
 violin = [mi2f mi2f re2f re2f do2f do2f ti1f ti1f...
 la1f la1f so1f so1f la1f la1f ti1f ti1f ...%
 do2f do2f ti1f ti1f la1f la1f so1f so1f...
@@ -159,3 +159,4 @@ v3 = [blkblock blkblock blkblock violin];
 s = v1+v2+v3;
 s = s/max(s);
 sound(s,fs);
+%转自网易博客
